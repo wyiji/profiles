@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/all.css">
+    <title>王怡淨 Yi-Jing Wang</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="profile"></div>
-        <!-- <img src="images/avatar.png" alt="Avatar" class="profile-avatar" width="120" height="120"> -->
-        <h1 class="profile-name">Your Name</h1>
-        <p class="profile-bio">A short bio about yourself goes here.</p>
-        <ul class="profile-info">
-            <li>Email: your.email@example.com</li>
-            <li>Location: Your City</li>
+    <header class="header">
+        <img src="images/avatar.png" alt="Avatar" class="avatar">
+        <h1>王怡淨 Yi-Jing Wang</h1>
+        <p class="tagline">統計分析｜資料科學｜積極負責</p>
+    </header>
+
+    <section class="intro">
+        <h2>關於我</h2>
+        <p>
+            我是王怡淨，個性積極、有責任感且不輕易放棄！<br>
+            擅長團隊合作與溝通，樂於學習新知，也樂於與來自不同背景的成員協作。
+            目前就讀於國立陽明交通大學統計學研究所，專注於機器學習與資料分析應用。
+        </p>
+    </section>
+
+    <section class="education">
+        <h2>學歷</h2>
+        <ul>
+            <li><b>國立陽明交通大學</b>｜統計學研究所（2023–2025） GPA：4.18 / 4.3</li>
+            <li><b>國立政治大學</b>｜統計學系（2019–2023） GPA：4.3 / 4.3</li>
         </ul>
-    </div>
+    </section>
+
+    <section class="projects">
+        <h2>專案與研究</h2>
+        <div class="project">
+            <h3>人壽業務員之數位行為與績效分析</h3>
+            <p><b>工具：</b>Python（XGBoost, SHAP）、Tableau<br>
+            <b>成果：</b>建立預測模型並運用 XAI 提出分群策略，提升工具使用率與業績表現。</p>
+        </div>
+
+        <div class="project">
+            <h3>胸腔 X 光異常偵測</h3>
+            <p><b>工具：</b>PyTorch（Faster R-CNN）<br>
+            <b>成果：</b>訓練異常區塊定位模型，mAP 達 0.458，導入 CAM 強化可解釋性。</p>
+        </div>
+
+        <div class="project">
+            <h3>Sig-MMD 時間序列生成模型</h3>
+            <p><b>工具：</b>Python（GAN + Sig-MMD）<br>
+            <b>成果：</b>設計結合時間特徵表示與 MMD 的新損失函數，訓練效率提升 10–20 倍。</p>
+        </div>
+
+        <div class="project">
+            <h3>i 郵箱佈點優化平台【2024 郵政大數據競賽第三名】</h3>
+            <p><b>工具：</b>Python（pandas、geopandas）、Folium、Leaflet.js<br>
+            <b>成果：</b>建構互動式地圖佈點建議平台，自動生成 HTML 視覺化結果。</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>技能</h2>
+        <ul>
+            <li><b>Machine Learning：</b> XGBoost、Random Forest、CNN、GAN、Faster R-CNN</li>
+            <li><b>Statistical Analysis：</b> Logistic Regression、PCA、時間序列分析</li>
+            <li><b>Programming：</b> Python、SQL、R、SAS、Tableau</li>
+            <li><b>Languages：</b> 中文（母語）、英文（TOEIC 940）、日文（初中級）</li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>經歷</h2>
+        <div class="exp-item">
+            <h3>台積電 TSMC 暑期實習｜智慧製造 (2024/07–08)</h3>
+            <p>以 SQL 處理製程與排程資料，分析產能瓶頸並優化派工規則。</p>
+        </div>
+        <div class="exp-item">
+            <h3>台北榮總研究助理｜統計分析 (2024/02–07)</h3>
+            <p>建立 GLM 模型分析拇指外翻臨床資料，協助醫師理解統計結果。</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>聯絡方式</h2>
+        <p>Email：<a href="mailto:wyijing0627@gmail.com">wyijing0627@gmail.com</a><br>
+        Phone：0963-678-649</p>
+        <p>© 2025 Yi-Jing Wang</p>
+    </footer>
 </body>
 </html>
